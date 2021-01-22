@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CYBRERBOT</title>
+	<link rel="stylesheet" type="text/css" href="Evaaah.css">
+</head>
+
+<body>
+
+     <div id="bg" class="bg1"> </div>
+     <object id="ss" class="ss" type="text/html" data="solar.html"></object>
+
+     <object id="chat" class="chat" type="text/html" data="chat.html"></object>
+
+<!----------- Button part starts --------->
+	<a href="#" class="but" style="top:100px;">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	Hello I'm Evaaah </a>
+	<a href="#" id="kidbut" class="but" onclick="kid()" style="top:200px;" >
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	Meet Kid Bot </a>
+	<a href="#" id="dabbut" class="but" onclick="dab()" style="top:300px;" >
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	      DAB </a>
+	<a href="#" id="chatbut" class="but" onclick="chatting()" style="top:400px;" >
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	    Chat With Me </a>
+	<a href="#" id="lasbut" class="but" onclick="laser()" style="top:500px;"> 
+        <span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+        On the Lasers 
+    </a>
+    <a href="#" id="solbut" class="but" onclick="solar()" style="top:600px;"> 
+        <span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+        Show Solar System
+    </a>
+    <a href="#" id="team" class="but" style="top:650px; left:1200px; font-size:18px;"> 
+        <span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+        Made By Team SpongeBots: 1. Ayush Sinha  2.Rishu Kumar  3.Abhinab Saha
+    </a>
+<!------------Button part Ends------------->
+
+
+
+
+<!-------------bot part Starts---------------->
+<div> 
+	<div id="head" class="head"> 
+		<div id="face" class="face">
+			<div class="eyes" style="left: 53px;"></div>
+			<div class="eyes" style="left: 10px;"></div>
+
+		</div>
+	</div>
+	<div id="body" class="body"></div>
+	<div id="l_hand" class="l_hand"></div>
+	<div id="r_hand" class="r_hand"></div>
+</div>
+<!---------------bot part Ends-------------->
+
+ 
+<!-------kid bot starts--------->
+    <div class="bot"> 
+  <div class="sm_head" id="sm_head" style="width: 59px; height: 46px; margin-left: 650px; margin-top: 7px;"> 
+    <div class="sm_face" id="sm_face" style="width: 54px; height: 40px; margin-left: -4.5px;">
+      <div class="sm_eyes" style=" left: 32px;"></div>
+      <div class="sm_eyes" style="left: 11px;"></div>
+    </div>
+  </div>
+  <div class="sm_body" id="sm_body" style="width: 53px; height:90px; margin-left: 652px; margin-top: 55px;"></div>
+  <div class="sm_l_hand" id="sm_l_hand" style="width: 10px; height: 54px; margin-left: 642px; margin-top: 60px;"></div>
+  <div class="sm_r_hand" id="sm_r_hand" style="width: 10px; height: 54px; margin-left: 705px; margin-top: 60px;"></div>
+</div>
+<!--------kid bot ends-------------->
+
+
+
+<!----------Laser part Starts----------->
+ 
+            <div id="lasblue" class="lasb"> </div>
+            <div id="lasred" class="lasr"> </div>
+            <div id="lasgreen" class="lasg"> </div>
+<!----------Laser part Ends-------------->
+
+
+
+
+<!----------------- Javascript starts ---------------------> 
+        <script type="text/javascript">
+           
+           var lasb=document.getElementById("lasblue");
+           var lasr=document.getElementById("lasred");
+           var lasg=document.getElementById("lasgreen");
+           var lasbut=document.getElementById("lasbut");
+            
+            function laser(){
+               if(lasb.className=="lb blue")
+               { 
+                   lasb.className = "lasb"; 
+                   lasr.className = "lasr";
+                   lasg.className = "lasg";
+                   lasbut.innerHTML = " On the Lasers ";
+               }
+               else
+               { 
+                   lasb.className = "lb blue"; 
+                   lasr.className = "lb red";
+                   lasg.className = "lb green";
+                   lasbut.innerHTML = " Off the Lasers ";
+               }    
+             }
+
+            
+            var solbut=document.getElementById("solbut");
+            var ss=document.getElementById("ss");
+           
+            function solar(){
+               if(solbut.innerHTML==" Hide Solar System ")
+               { 
+                   ss.style.top=" 1000px ";
+                  
+                   solbut.innerHTML = " Show Solar System ";
+               }
+               else
+               { 
+               	   
+                   ss.style.top="-100px";
+                   solbut.innerHTML = " Hide Solar System ";
+               }    
+             }
+
+                
+            var chatbut=document.getElementById("chatbut");
+            var chat=document.getElementById("chat");
+            function chatting(){
+               if(chatbut.innerHTML==" Hide Chat ")
+               { 
+                   
+                   chat.style.top="1000px";
+                   chatbut.innerHTML = " Chat With Me ";
+               }
+               else
+               { 
+                   chat.style.top="100px";
+                  
+                   chatbut.innerHTML = " Hide Chat ";
+               }    
+             }
+            
+            
+              var dabbut=document.getElementById('dabbut');
+  var head = document.getElementById('head');
+  var l_hand = document.getElementById('l_hand');
+  var r_hand = document.getElementById('r_hand');
+  var body = document.getElementById('body');
+  function dab(){
+            if(dabbut.innerHTML=="DAB")
+            {
+              head.className="d_head";
+              l_hand.className="d_l_hand";
+              r_hand.className="d_r_hand";
+              body.className = "d_body";
+              dabbut.innerHTML = "Stop DAB"
+            }
+            else{
+              head.className="head";
+              l_hand.className="l_hand";
+              r_hand.className="r_hand";
+              body.className = "body";
+              dabbut.innerHTML = "DAB";
+            }
+        }
+          
+          var kidbut=document.getElementById('kidbut');
+  var sm_head = document.getElementById('sm_head');
+  var sm_l_hand = document.getElementById('sm_l_hand');
+  var sm_r_hand = document.getElementById('sm_r_hand');
+  var sm_body = document.getElementById('sm_body');
+  var sm_face = document.getElementById('sm_face');
+  function kid(){
+            if(kidbut.innerHTML=="Meet Kid Bot")
+            {
+              sm_head.style.top="54%";
+              sm_l_hand.style.top="54%";
+              sm_r_hand.style.top="54%";
+              sm_body.style.top = "54%";
+              sm_face.style.top ="3px";
+              kidbut.innerHTML = "Hide Kid Bot";
+            }
+            else{
+             sm_head.style.top="1000px";
+              sm_l_hand.style.top="1000px";
+              sm_r_hand.style.top="1000px";
+              sm_body.style.top = "1000px";
+              sm_face.style.top ="1000px";
+              kidbut.innerHTML = "Meet Kid Bot";
+            }
+        }
+     </script>
+<!-----------------------Javascript Ends-------------------------->
+
+</body>
+</html>

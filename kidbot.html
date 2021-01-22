@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> kidbot </title>
+	<style>
+
+.sm_eyes {
+	z-index: 1;
+	position: absolute;
+	width: 12px;
+	height:8px;
+	border-radius: 50%;
+	background: #ffcd00;
+	display: flex;
+	justify-content: center;
+	box-shadow: 0 2px 10px 3px #2196f3;
+	animation-name: sm_wierd;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	box-shadow: 0 12px 16px 
+	rgba(0,0,0,0.24), 0 17px 50px 0
+	rgba(0,0,0,0.19);
+	animation-direction: alternate;
+}
+#sm_r_hand {
+			position: absolute;
+			top: 54%;
+			left: 560px;
+			width: 20px;
+			height: 150px;
+			background-color:rgb(196, 196, 196);
+			border-radius: 45% 55% 100% 0% / 100% 18% 82% 0% ;
+			/* animation-name: hover_sm_hand; animation-duration: 2s; animation-iteration-count: infinite;
+			animation-direction: alternate; */
+}
+
+#sm_l_hand {
+			position: absolute;
+			top: 54%;
+			left: 550px;
+			width: 9px;
+			height: 10px;
+			background-color: rgb(196, 196, 196);
+			border-radius: 60% 40% 0% 100% / 18% 100% 0% 82% ;
+			/* animation-name: hover_sm_hand; animation-duration: 2s; animation-iteration-count: infinite;
+			animation-direction: alternate; */
+}
+
+#sm_face {
+	z-index: 1;
+			position: relative;
+			left: 7px;
+			top: 3px;
+			width: 90px;
+			height: 70px;
+			background-color: black;
+			border-radius: 49% 51% 48% 52% / 72% 69% 31% 28% ;
+}
+#sm_head {
+	z-index: 1;
+			position: absolute;
+			left : 38.5%;
+			top: 54%;
+			width: 105px;
+			height: 85px;
+			background-color: rgb(196, 196, 196);
+			border-radius: 49% 51% 48% 52% / 72% 69% 31% 28% ;
+			/* animation-name: hover_sm_head; animation-duration: 2s; animation-iteration-count: infinite;
+			animation-direction: alternate; */
+}
+
+#sm_body {
+	z-index: 1;
+			position: absolute;
+			left: 38.5%;
+			top: 54%;
+			width: 105px;
+			height: 220px;
+			background-color: rgb(196, 196, 196);
+			border-radius: 45% 55% 48% 52% / 5% 5% 95% 95%  ;
+			/* animation-name: hover_sm_body; animation-duration: 2s; animation-iteration-count: infinite;
+			animation-direction: alternate; */
+}
+
+@keyframes hover_sm_body {
+	0% {
+		position: absolute;
+		top: 10%;
+		 left:-20.5%; 
+	}
+	100% {
+		top: 100%;
+		 left:-30.5%; 
+	}
+}
+@keyframes hover_sm_head {
+	0% {
+		position: absolute;
+		top: 45%;
+		 left:-20.5%; 
+	}
+	100% {
+		position: absolute;
+		top: 49%;
+		 left:-30.5%; 
+	}
+}
+@keyframes hover_sm_hand {
+	from {
+		position: absolute;
+		top: 52%;
+		left:-20.5%; 
+	}
+	to {
+		position: absolute;
+		top: 57%;
+		left:-30.5%; 
+	}
+}
+
+@keyframes sm_wierd {
+	from {
+	content: '';
+	/*box-shadow: 0 2px 5px 3px #2196f3;*/
+	position: absolute;
+	top: 34%;
+	width: 10px;
+	height: 10px;
+	background:#34c3eb;
+	transition: 0.5s;
+	border-radius: 50% 56% 46% 46% / 84% 83% 10% 10%;
+	}
+	to {
+	/*box-shadow: 0 2px 15px 3px #2196f3;*/
+	top: 39%;
+	width: 10px;
+	height: 5px;
+	background:#34c3eb;
+	}
+}
+	</style>
+</head>
+
+
+<body>
+   <div class="bot"> 
+  <div class="sm_head" id="sm_head" style="width: 59px; height: 46px; margin-left: 650px; margin-top: 7px;"> 
+    <div class="sm_face" id="sm_face" style="width: 54px; height: 40px; margin-left: -4.5px;">
+      <div class="sm_eyes" style=" left: 32px;"></div>
+      <div class="sm_eyes" style="left: 11px;"></div>
+    </div>
+  </div>
+  <div class="sm_body" id="sm_body" style="width: 53px; height:90px; margin-left: 652px; margin-top: 55px;"></div>
+  <div class="sm_l_hand" id="sm_l_hand" style="width: 10px; height: 54px; margin-left: 642px; margin-top: 60px;"></div>
+  <div class="sm_r_hand" id="sm_r_hand" style="width: 10px; height: 54px; margin-left: 705px; margin-top: 60px;"></div>
+</div>
+</body>
+</html>

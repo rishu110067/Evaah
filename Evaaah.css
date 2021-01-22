@@ -1,0 +1,585 @@
+*
+{
+	margin:0;
+	padding: 0;
+	box-sizing: border box;
+
+}
+
+html{
+	margin:0;
+	height:100%;
+}
+
+body{
+	margin:0;
+	padding: 0;
+	display:flex;
+	justify-content: center;
+	min-height: 100vh;
+	align-items: center;
+	min-height: 100vh;
+	font-family: consolas;
+	height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-image: url("shootingstar.gif");
+
+}
+
+.ss{
+	position:relative;
+	top:1000px;
+	left:750px;
+	height:600px;
+	width:800px;
+	z-index:-1;
+}
+.chat{
+	position:relative;
+	top:1000px;
+	left:50px;
+	height:400px;
+	width:600px;
+}
+.lasershow{
+	height:100%;
+	width:100%;
+}
+
+
+/*--------------- Bot Starts--------------*/
+.eyes {
+	z-index: 1;
+	position: absolute;
+	width: 25px;
+	height:20px;
+	border-radius: 50%;
+	background: #ffcd00;
+	display: flex;
+	justify-content: center;
+	animation-name: wierd;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	box-shadow: 0 12px 16px 
+	rgba(0,0,0,0.24), 0 17px 50px 0
+	rgba(0,0,0,0.19);
+	animation-direction: alternate;
+	box-shadow: 0 2px 10px 3px #2196f3;
+
+}
+.r_hand {
+			position: absolute;
+			left: 705px;
+			width: 20px;
+			height: 150px;
+			background-color:rgb(196, 196, 196);
+			border-radius: 45% 55% 100% 0% / 100% 18% 82% 0% ;
+			animation-name: hover_hand; animation-duration: 1s ; animation-iteration-count: infinite;
+			animation-direction: alternate;
+}	
+.l_hand {
+			position: absolute;
+			left: 579px;
+			width: 20px;
+			height: 150px;
+			background-color: rgb(196, 196, 196);
+			/*border-radius: 49% 51% 35% 65% / 10% 11% 89% 90% ;*/
+			border-radius: 60% 40% 0% 100% / 18% 100% 0% 82%   ;
+			animation-name: hover_hand; animation-duration: 1s ; animation-iteration-count: infinite;
+			animation-direction: alternate;
+}	
+			
+#face {
+			position: relative;
+			left: 8px;
+			top: 7px;
+			width: 90px;
+			height: 70px;
+			background-color: black;
+			border-radius: 49% 51% 48% 52% / 72% 69% 31% 28% ;
+}
+.head {
+			position: relative;
+			left :600px;
+			top: 110px;
+			width: 105px;
+			height: 85px;
+			background-color: rgb(196, 196, 196);
+			border-radius: 49% 51% 48% 52% / 72% 69% 31% 28% ;
+			animation-name: hover_head; animation-duration: 1s ; animation-iteration-count: infinite;
+			animation-direction: alternate;
+}
+.body {
+			position: relative;
+			left: 600px;
+			top: 110px;
+			width: 105px;
+			height: 220px;
+			background-color: rgb(196, 196, 196);
+			border-radius: 45% 55% 48% 52% / 5% 5% 95% 95%  ;
+			animation-name: hover_body; animation-duration: 1s ; animation-iteration-count: infinite;
+			animation-direction: alternate;
+}
+/*--------------Bot Ends--------------*/
+
+
+
+/*---------------kid bot---------------*/
+.sm_eyes {
+	z-index: 1;
+	position: absolute;
+	width: 12px;
+	height:8px;
+	border-radius: 50%;
+	background: #ffcd00;
+	display: flex;
+	justify-content: center;
+	box-shadow: 0 2px 10px 3px #2196f3;
+	animation-name: sm_wierd;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	box-shadow: 0 12px 16px 
+	rgba(0,0,0,0.24), 0 17px 50px 0
+	rgba(0,0,0,0.19);
+	animation-direction: alternate;
+}
+#sm_r_hand {
+			position: absolute;
+			top: 1000px;
+			left: 547px;
+			width: 20px;
+			height: 150px;
+			background-color:rgb(196, 196, 196);
+			border-radius: 45% 55% 100% 0% / 100% 18% 82% 0% ;
+			/* animation-name: hover_sm_hand; animation-duration: 2s; animation-iteration-count: infinite;
+			animation-direction: alternate; */
+}
+
+#sm_l_hand {
+			position: absolute;
+			top: 1000px;
+			left: 550px;
+			width: 9px;
+			height: 10px;
+			background-color: rgb(196, 196, 196);
+			border-radius: 60% 40% 0% 100% / 18% 100% 0% 82% ;
+			/* animation-name: hover_sm_hand; animation-duration: 2s; animation-iteration-count: infinite;
+			animation-direction: alternate; */
+}
+
+#sm_face {
+	z-index: 1;
+			position: relative;
+			left: 7px;
+			top: 1000px;
+			width: 90px;
+			height: 70px;
+			background-color: black;
+			border-radius: 49% 51% 48% 52% / 72% 69% 31% 28% ;
+}
+#sm_head {
+	z-index: 1;
+			position: absolute;
+			left : 38.5%;
+			top: 1000px;
+			width: 105px;
+			height: 85px;
+			background-color: rgb(196, 196, 196);
+			border-radius: 49% 51% 48% 52% / 72% 69% 31% 28% ;
+			/* animation-name: hover_sm_head; animation-duration: 2s; animation-iteration-count: infinite;
+			animation-direction: alternate; */
+}
+
+#sm_body {
+	z-index: 1;
+			position: absolute;
+			left: 38.5%;
+			top: 1000px;
+			width: 105px;
+			height: 220px;
+			background-color: rgb(196, 196, 196);
+			border-radius: 45% 55% 48% 52% / 5% 5% 95% 95%  ;
+			/* animation-name: hover_sm_body; animation-duration: 2s; animation-iteration-count: infinite;
+			animation-direction: alternate; */
+}
+@keyframes sm_wierd {
+	from {
+	content: '';
+	/*box-shadow: 0 2px 5px 3px #2196f3;*/
+	position: absolute;
+	top: 34%;
+	width: 10px;
+	height: 10px;
+	background:#34c3eb;
+	transition: 0.5s;
+	border-radius: 50% 56% 46% 46% / 84% 83% 10% 10%;
+	}
+	to {
+	/*box-shadow: 0 2px 15px 3px #2196f3;*/
+	top: 39%;
+	width: 10px;
+	height: 5px;
+	background:#34c3eb;
+	}
+}
+/*-------------- kid bot ends--------------*/
+
+
+
+/*----------------Dab starts----------------*/
+.d_r_hand {
+			position: absolute;
+			top: 55%;
+			left: 705px;
+			width: 20px;
+			height: 150px;
+			background-color:rgb(196, 196, 196);
+			border-radius: 45% 55% 100% 0% / 100% 18% 82% 0% ;
+			animation: dab_r_hand 2s infinite alternate;
+			 transform-origin: 100% 0%; 
+}	
+.d_l_hand {
+			position: absolute;
+			top: 55%;
+			left: 579px;
+			width: 20px;
+			height: 150px;
+			background-color: rgb(196, 196, 196);
+			/*border-radius: 49% 51% 35% 65% / 10% 11% 89% 90% ;*/
+			border-radius: 60% 40% 0% 100% / 18% 100% 0% 82%   ;
+			animation: dab_l_hand 2s infinite alternate;
+			 transform-origin: 100% 0%; 
+}	
+
+.d_head {
+			position: absolute;
+			left : 39%;
+			top: 41%;
+			width: 105px;
+			height: 85px;
+			background-color: rgb(196, 196, 196);
+			border-radius: 49% 51% 48% 52% / 72% 69% 31% 28% ;
+			animation:dab_head 2s infinite alternate;
+}
+.d_body {
+			position: absolute;
+			left: 39%;
+			top: 53%;
+			width: 105px;
+			height: 220px;
+			background-color: rgb(196, 196, 196);
+			border-radius: 45% 55% 48% 52% / 5% 5% 95% 95%  ;
+}
+#dab{
+	position: absolute;
+	display: inline-block;
+	padding: 15px 30px;
+	color:#2196f3;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	text-decoration: none;
+	font-size:24px;
+	overflow: hidden;
+	transition: 0.2s;
+	margin-left: -500px;
+
+}
+#dab:hover{
+	color: #255784;
+	background: #2196f3;
+	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3,0 0 10px #2196f3;
+	transition-delay: 1s;
+}
+#dab span{
+	position: absolute;
+	display: block;
+
+}
+#dab span:nth-child(1)
+{
+	top: 0;
+	left: -100%;
+	width:100%;
+	height:2px;
+	background: linear-gradient(90deg,transparent,#2196f3);
+
+}
+#dab:hover span:nth-child(1){
+	left: 100%;
+	transition: 1s;
+
+}
+#dab span:nth-child(3)
+{
+	bottom:0;
+	right: -100%;
+	width:100%;
+	height:2px;
+	background: linear-gradient(270deg,transparent,#2196f3);   
+
+}
+#dab:hover span:nth-child(3){
+	right: 100%;
+	transition: 1s;
+	transition-delay: 0.5s;
+
+}
+#dab span:nth-child(2)
+{
+	top: -100px;
+	right: 0;
+	width:2px;
+	height:100%;
+	background: linear-gradient(180deg,transparent,#2196f3);   
+
+}
+#dab:hover span:nth-child(2){
+	top:  100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+
+}
+#dab span:nth-child(4)
+{
+	bottom:  -100px;
+	left: 0;
+	width:2px;
+	height:100%;
+	background: linear-gradient(360deg,transparent,#2196f3);   
+
+}
+#dab:hover span:nth-child(4){
+	bottom:   100%;
+	transition: 1s;
+	transition-delay: 0.75s;
+
+}
+
+@keyframes dab_head {
+	0% {
+		position: absolute; 
+		top: 41%;
+		left: 39%;
+	}
+	100%{
+		top: 41%;
+		left: 39%;
+		transform: rotateX(-50deg);
+	}
+}
+@keyframes dab_r_hand {
+	from {
+		position: absolute;
+		top : 55%;
+		left: 45%;
+	}
+	to {
+		top: 55%;
+		left: 45%;
+		transform: rotateZ(-130deg);
+	}
+}
+@keyframes dab_l_hand {
+	from {
+		position:absolute;
+		top : 55%;
+		left: 37%;
+	}
+	to {
+		top: 55%;
+		left: 37%;
+		transform: rotateZ(-110deg);
+	}
+}
+/*------------------Dab Ends----------------*/
+
+
+
+/*----------------code for buttons--------------*/
+.but{
+	position: absolute;
+	display: inline-block;
+	padding: 15px 30px;
+	color:#2196f3;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	text-decoration: none;
+	font-size:24px;
+	overflow: hidden;
+	transition: 0.2s;
+	margin-left: -500px;
+
+}
+.but:hover{
+	color: #255784;
+	background: #2196f3;
+	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3,0 0 10px #2196f3;
+	transition-delay: 1s;
+}
+.but span{
+	position: absolute;
+	display: block;
+
+}
+.but span:nth-child(1)
+{
+	top: 0;
+	left: -100%;
+	width:100%;
+	height:2px;
+	background: linear-gradient(90deg,transparent,#2196f3);
+
+}
+.but:hover span:nth-child(1){
+	left: 100%;
+	transition: 1s;
+
+}
+.but span:nth-child(3)
+{
+	bottom:0;
+	right: -100%;
+	width:100%;
+	height:2px;
+	background: linear-gradient(270deg,transparent,#2196f3);   
+
+}
+.but:hover span:nth-child(3){
+	right: 100%;
+	transition: 1s;
+	transition-delay: 0.5s;
+
+}
+.but span:nth-child(2)
+{
+	top: -100px;
+	right: 0;
+	width:2px;
+	height:100%;
+	background: linear-gradient(180deg,transparent,#2196f3);   
+
+}
+.but:hover span:nth-child(2){
+	top:  100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+
+}
+.but span:nth-child(4)
+{
+	bottom:  -100px;
+	left: 0;
+	width:2px;
+	height:100%;
+	background: linear-gradient(360deg,transparent,#2196f3);   
+
+}
+.but:hover span:nth-child(4){
+	bottom:   100%;
+	transition: 1s;
+	transition-delay: 0.75s;
+}
+/*------------------Button Ends------------------*/
+
+
+
+/*------------------ Laser Starts----------------- */
+div.lb{
+  position: relative;
+  left:-785px;
+  top:-45px;
+  width: 6px;
+  height: 100%;
+  z-index: -1;
+			
+}
+div.blue{
+    background: rgba(99,195,231,0.8);
+    box-shadow: 0px 0px 15px 0px rgba(99,205,251,1);
+    animation: laser 7s infinite , laserhover 1s infinite alternate ;
+   
+}
+div.red{
+    background:rgba(236,19,65,0.8);
+    box-shadow: 0px 0px 15px 0px rgba(236,19,65,1);
+    animation: laser 5s infinite , laserhover 1s infinite alternate;
+    
+}
+div.green{
+    background:rgba(86, 212, 69, 0.8);
+    box-shadow: 0px 0px 15px 0px rgba(86,212,69,1);
+    animation: laser 11s infinite, laserhover 1s infinite alternate ;
+    
+}
+/*-------------------Laser Ends-----------------*/
+
+
+
+/*---------------code for animations----------------*/
+@keyframes hover_body {
+	0% {
+		position: absolute;
+		top: 47.5%;
+	}
+	100% {
+		position: absolute;
+		top: 53.5%;
+
+	}
+}
+@keyframes hover_head {
+	0% {
+		position: absolute;
+		top: 36%;
+	}
+	100% {
+		position: absolute;
+		top: 42%;
+	}
+}
+@keyframes hover_hand {
+	from {
+		position: absolute;
+		top: 49%;
+	}
+	to {
+		position: absolute;
+		top: 55%;
+	}
+}
+@keyframes wierd {
+	from {
+	content: '';
+	position: absolute;
+	top: 38%;
+	width: 25px;
+	height: 20px;
+	background:#34c3eb;
+	transition: 0.5s;
+	border-radius: 50% 56% 46% 46% / 84% 83% 10% 10%;
+	}
+	to {
+	top: 43%;
+	width: 25px;
+	height: 10px;
+	background:#34c3eb;
+	}
+}
+
+@keyframes laser {
+  0%  {transform: rotate(-90deg);}
+  50% {transform: rotate(90deg); }
+  100%{transform: rotate(-90deg); }
+}
+
+@keyframes laserhover{
+
+	0%{ top:-45px; }
+	100%{ top:-65px; }
+}
+/*--------------Animation Ends---------------*/
+
+
+
